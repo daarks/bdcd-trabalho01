@@ -15,7 +15,7 @@ Gabriel Rodrigues da Silva — RA 800277 (trabalho individual).
 
 Dengue nos municípios brasileiros: casos notificados, clima e porte populacional.
 
-Todo o código está no repositório <https://github.com/SEU-USUARIO/bdcd-trabalho01>.
+Todo o código está no repositório <https://github.com/daarks/bdcd-trabalho01>.
 
 \newpage
 
@@ -32,13 +32,13 @@ InfoDengue — Alerta de arboviroses por município (série `alertcity`, doença
 ## c) Link da base e do script de coleta
 
 - Endpoint da API: <https://info.dengue.mat.br/api/alertcity>
-- Script de coleta: <https://github.com/SEU-USUARIO/bdcd-trabalho01/blob/main/coleta/coleta_dengue.py>
+- Script de coleta: <https://github.com/daarks/bdcd-trabalho01/blob/main/coleta/coleta_dengue.py>
 
 A API atende um município por requisição, então o script pega a lista de geocodes acima de 100 mil habitantes (que vem da Base 2) e busca os dez anos de uma vez para cada um, em seis threads.
 
 ## d) Carga da base no MongoDB
 
-Script de carga: <https://github.com/SEU-USUARIO/bdcd-trabalho01/blob/main/carga/carga_mongo.sh>
+Script de carga: <https://github.com/daarks/bdcd-trabalho01/blob/main/carga/carga_mongo.sh>
 
 ```bash
 mongoimport --db dengue_br --collection alertas --drop --jsonArray --file dados/alertas.json
@@ -140,7 +140,7 @@ Sem índice o Mongo faz COLLSCAN, ou seja, lê a collection inteira e testa o fi
 
 ## h) Conexão via Python com PyMongo
 
-Notebook: <https://github.com/SEU-USUARIO/bdcd-trabalho01/blob/main/notebook/trabalho01.ipynb>
+Notebook: <https://github.com/daarks/bdcd-trabalho01/blob/main/notebook/trabalho01.ipynb>
 
 ```python
 from pymongo import MongoClient
@@ -158,7 +158,7 @@ print(dengue.alertas.count_documents({}))
 
 **i2) Atributos envolvidos:** `SE` (semana epidemiológica no formato AAAASS, de onde sai a semana) e `casos` (notificações da semana).
 
-**i3) Código:** <https://github.com/SEU-USUARIO/bdcd-trabalho01/blob/main/notebook/trabalho01.ipynb>
+**i3) Código:** <https://github.com/daarks/bdcd-trabalho01/blob/main/notebook/trabalho01.ipynb>
 
 \newpage
 
@@ -176,13 +176,13 @@ IBGE — API de Localidades (municípios) e Tabela 6579 do SIDRA (População re
 
 - API de Localidades: <https://servicodados.ibge.gov.br/api/v1/localidades/municipios>
 - API do SIDRA: <https://apisidra.ibge.gov.br/values/t/6579/n6/all/v/all/p/last>
-- Script de coleta: <https://github.com/SEU-USUARIO/bdcd-trabalho01/blob/main/coleta/coleta_ibge.py>
+- Script de coleta: <https://github.com/daarks/bdcd-trabalho01/blob/main/coleta/coleta_ibge.py>
 
 As duas APIs respondem tudo de uma vez, então o script só descomprime o gzip, descarta a linha de cabeçalho descritivo que o SIDRA manda na primeira posição e grava os dois JSON.
 
 ## d) Carga da base no MongoDB
 
-Script de carga: <https://github.com/SEU-USUARIO/bdcd-trabalho01/blob/main/carga/carga_mongo.sh>
+Script de carga: <https://github.com/daarks/bdcd-trabalho01/blob/main/carga/carga_mongo.sh>
 
 ```bash
 mongoimport --db ibge --collection municipios --drop --jsonArray --file dados/municipios.json
@@ -288,7 +288,7 @@ Sem índice em `populacao.geocode`, o `$lookup` varre a collection inteira uma v
 
 ## h) Conexão via Python com PyMongo
 
-Notebook: <https://github.com/SEU-USUARIO/bdcd-trabalho01/blob/main/notebook/trabalho01.ipynb>
+Notebook: <https://github.com/daarks/bdcd-trabalho01/blob/main/notebook/trabalho01.ipynb>
 
 ```python
 from pymongo import MongoClient
@@ -306,7 +306,7 @@ print(ibge.municipios.count_documents({}), ibge.populacao.count_documents({}))
 
 **i2) Atributos envolvidos:** `regiao-imediata.regiao-intermediaria.UF.regiao.nome` (região), `id` e `geocode` (chaves do join) e `populacao`.
 
-**i3) Código:** <https://github.com/SEU-USUARIO/bdcd-trabalho01/blob/main/notebook/trabalho01.ipynb>
+**i3) Código:** <https://github.com/daarks/bdcd-trabalho01/blob/main/notebook/trabalho01.ipynb>
 
 \newpage
 
