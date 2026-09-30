@@ -1,0 +1,30 @@
+================================================================================================
+CONSULTA 1 - Top 10 municipios por casos de dengue em 2024
+Objetivo: ranquear os municipios com mais casos notificados em 2024 e comparar o peso real desses casos pela incidencia por 100 mil habitantes, junto do numero de semanas em que o municipio ficou no nivel maximo de alerta.
+================================================================================================
+{"municipio":"São Paulo","casos":1263604,"populacao":12200180,"semanas_alerta_vermelho":51,"incidencia_100mil":10357.3}
+{"municipio":"Belo Horizonte","casos":342814,"populacao":2392678,"semanas_alerta_vermelho":20,"incidencia_100mil":14327.6}
+{"municipio":"Brasília","casos":322657,"populacao":2923369,"semanas_alerta_vermelho":23,"incidencia_100mil":11037.2}
+{"municipio":"Campinas","casos":170309,"populacao":1170247,"semanas_alerta_vermelho":24,"incidencia_100mil":14553.3}
+{"municipio":"São José dos Campos","casos":163681,"populacao":725419,"semanas_alerta_vermelho":40,"incidencia_100mil":22563.6}
+{"municipio":"Rio de Janeiro","casos":141854,"populacao":6625849,"semanas_alerta_vermelho":24,"incidencia_100mil":2140.9}
+{"municipio":"Joinville","casos":134677,"populacao":617979,"semanas_alerta_vermelho":42,"incidencia_100mil":21793.1}
+{"municipio":"Contagem","casos":101743,"populacao":615621,"semanas_alerta_vermelho":21,"incidencia_100mil":16526.9}
+{"municipio":"Sorocaba","casos":94621,"populacao":738128,"semanas_alerta_vermelho":23,"incidencia_100mil":12819.1}
+{"municipio":"Guarulhos","casos":89665,"populacao":1383272,"semanas_alerta_vermelho":26,"incidencia_100mil":6482.1}
+
+================================================================================================
+CONSULTA 2 - As 10 semanas epidemiologicas mais criticas (media de 2015 a 2024)
+Objetivo: descobrir em que ponto do calendario a dengue pesa mais, cruzando a media de casos por semana epidemiologica com a temperatura media registrada e a quantidade de alertas no nivel vermelho.
+================================================================================================
+{"alertas_vermelhos":1264,"semana_epidemiologica":15,"casos_medios":253.7,"temperatura_media":23.6}
+{"alertas_vermelhos":1195,"semana_epidemiologica":14,"casos_medios":252.3,"temperatura_media":23.6}
+{"alertas_vermelhos":1132,"semana_epidemiologica":12,"casos_medios":243.5,"temperatura_media":24.1}
+{"alertas_vermelhos":1279,"semana_epidemiologica":16,"casos_medios":242.1,"temperatura_media":22.7}
+{"alertas_vermelhos":1086,"semana_epidemiologica":11,"casos_medios":234.9,"temperatura_media":23.9}
+{"alertas_vermelhos":1151,"semana_epidemiologica":13,"casos_medios":230.7,"temperatura_media":23.5}
+{"alertas_vermelhos":1255,"semana_epidemiologica":17,"casos_medios":229,"temperatura_media":22.6}
+{"alertas_vermelhos":1244,"semana_epidemiologica":18,"casos_medios":221.9,"temperatura_media":22.3}
+{"alertas_vermelhos":1014,"semana_epidemiologica":10,"casos_medios":220.1,"temperatura_media":24}
+{"alertas_vermelhos":1244,"semana_epidemiologica":19,"casos_medios":211.1,"temperatura_media":21.8}
+

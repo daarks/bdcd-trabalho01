@@ -1,0 +1,8 @@
+338 municipios acima de 100000 habitantes
+  50/338 municipios | 26050 semanas
+  100/338 municipios | 52100 semanas
+  150/338 municipios | 78150 semanas
+  200/338 municipios | 104200 semanas
+  250/338 municipios | 130250 semanas
+  300/338 municipios | 156300 semanas
+alertas.json: 176098 registros

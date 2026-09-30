@@ -1,0 +1,7 @@
+Base: dengue_br
+  alertas -> 176098 documentos
+
+Base: ibge
+  municipios -> 5571 documentos
+  populacao -> 5571 documentos
+

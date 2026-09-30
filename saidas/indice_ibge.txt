@@ -1,0 +1,23 @@
+Consulta: join de ibge.municipios (id) com ibge.populacao (geocode), agrupado por UF
+Documentos: municipios=5571 populacao=5571
+
+--- ANTES DA CRIACAO DO INDICE ---
+estagio                 : $lookup em ibge.populacao
+indices usados          : []
+varreduras de collection: 5572
+documentos examinados   : 31041612
+chaves de indice lidas  : 0
+documentos retornados   : 5571
+tempo estimado (ms)     : 26779
+
+Indice criado: ibge.populacao.geocode_1
+
+--- DEPOIS DA CRIACAO DO INDICE ---
+estagio                 : $lookup em ibge.populacao
+indices usados          : ["geocode_1"]
+varreduras de collection: 0
+documentos examinados   : 5572
+chaves de indice lidas  : 5572
+documentos retornados   : 5571
+tempo estimado (ms)     : 861
+

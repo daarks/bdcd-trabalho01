@@ -1,0 +1,15 @@
+2026-09-30T16:06:34.560-0300	connected to: mongodb://localhost/
+2026-09-30T16:06:34.561-0300	dropping: `dengue_br.alertas`
+2026-09-30T16:06:37.560-0300	[####....................] dengue_br.alertas	21.6MB/118MB (18.4%)
+2026-09-30T16:06:40.560-0300	[#########...............] dengue_br.alertas	44.5MB/118MB (37.8%)
+2026-09-30T16:06:43.560-0300	[##############..........] dengue_br.alertas	69.6MB/118MB (59.1%)
+2026-09-30T16:06:46.561-0300	[##################......] dengue_br.alertas	92.4MB/118MB (78.5%)
+2026-09-30T16:06:49.560-0300	[#######################.] dengue_br.alertas	118MB/118MB (99.9%)
+2026-09-30T16:06:49.607-0300	[########################] dengue_br.alertas	118MB/118MB (100.0%)
+2026-09-30T16:06:49.607-0300	176098 document(s) imported successfully. 0 document(s) failed to import.
+2026-09-30T16:06:49.629-0300	connected to: mongodb://localhost/
+2026-09-30T16:06:49.630-0300	dropping: `ibge.municipios`
+2026-09-30T16:06:50.042-0300	5571 document(s) imported successfully. 0 document(s) failed to import.
+2026-09-30T16:06:50.063-0300	connected to: mongodb://localhost/
+2026-09-30T16:06:50.064-0300	dropping: `ibge.populacao`
+2026-09-30T16:06:50.243-0300	5571 document(s) imported successfully. 0 document(s) failed to import.

@@ -1,0 +1,19 @@
+Consulta: {"geocode":3550308,"data_iniSE":{"$gte":"2024-01-01T00:00:00.000Z","$lt":"2025-01-01T00:00:00.000Z"}}
+Total de documentos na collection: 176098
+
+--- ANTES DA CRIACAO DO INDICE ---
+estagio vencedor        : {"isCached":false,"stage":"COLLSCAN","filter":{"$and":[{"geocode":{"$eq":3550308}},{"data_iniSE":{"$lt":"2025-01-01T00:00:00.000Z"}},{"data_iniSE":{"$gte":"2024-01-01T00:00:00.000Z"}}]},"direction":"forward"}
+documentos retornados   : 51
+documentos examinados   : 176098
+chaves de indice lidas  : 0
+tempo de execucao (ms)  : 255
+
+Indice criado: geocode_1_data_iniSE_-1
+
+--- DEPOIS DA CRIACAO DO INDICE ---
+estagio vencedor        : {"isCached":false,"stage":"FETCH","inputStage":{"stage":"IXSCAN","keyPattern":{"geocode":1,"data_iniSE":-1},"indexName":"geocode_1_data_iniSE_-1","isMultiKey":false,"multiKeyPaths":{"geocode":[],"data_iniSE":[]},"isUnique":false,"isSparse":false,"isPartial":false,"indexVersion":2,"direction":"forward","indexBounds":{"geocode":["[3550308, 3550308]"],"data_iniSE":["(new Date(1735689600000), new Date(1704067200000)]"]}}}
+documentos retornados   : 51
+documentos examinados   : 51
+chaves de indice lidas  : 51
+tempo de execucao (ms)  : 3
+

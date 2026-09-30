@@ -1,0 +1,25 @@
+================================================================================================
+CONSULTA 1 - Municipios e populacao por UF (join entre municipios e populacao)
+Objetivo: juntar a hierarquia territorial do IBGE com a estimativa populacional para ver, por UF, quantos municipios existem, a populacao total e o porte medio do municipio.
+================================================================================================
+{"regiao":"Sudeste","municipios":645,"populacao_total":46179008,"uf":"SP","populacao_media":71595}
+{"regiao":"Sudeste","municipios":853,"populacao_total":21460311,"uf":"MG","populacao_media":25159}
+{"regiao":"Sudeste","municipios":92,"populacao_total":17225410,"uf":"RJ","populacao_media":187233}
+{"regiao":"Nordeste","municipios":417,"populacao_total":14889472,"uf":"BA","populacao_media":35706}
+{"regiao":"Sul","municipios":399,"populacao_total":11952456,"uf":"PR","populacao_media":29956}
+{"regiao":"Sul","municipios":497,"populacao_total":11233317,"uf":"RS","populacao_media":22602}
+{"regiao":"Nordeste","municipios":185,"populacao_total":9583176,"uf":"PE","populacao_media":51801}
+{"regiao":"Nordeste","municipios":184,"populacao_total":9302211,"uf":"CE","populacao_media":50555}
+{"regiao":"Norte","municipios":144,"populacao_total":8756324,"uf":"PA","populacao_media":60808}
+{"regiao":"Sul","municipios":295,"populacao_total":8312759,"uf":"SC","populacao_media":28179}
+
+================================================================================================
+CONSULTA 2 - Os 3 municipios mais populosos de cada regiao
+Objetivo: mostrar a concentracao populacional dentro de cada regiao do pais, comparando os tres maiores municipios com o total da regiao.
+================================================================================================
+{"populacao_regiao":89015421,"mais_populosos":[{"municipio":"São Paulo","uf":"SP","populacao":11911337},{"municipio":"Rio de Janeiro","uf":"RJ","populacao":6731133},{"municipio":"Belo Horizonte","uf":"MG","populacao":2415451}],"regiao":"Sudeste"}
+{"populacao_regiao":57366981,"mais_populosos":[{"municipio":"Fortaleza","uf":"CE","populacao":2582360},{"municipio":"Salvador","uf":"BA","populacao":2559945},{"municipio":"Recife","uf":"PE","populacao":1588983}],"regiao":"Nordeste"}
+{"populacao_regiao":31498532,"mais_populosos":[{"municipio":"Curitiba","uf":"PR","populacao":1832183},{"municipio":"Porto Alegre","uf":"RS","populacao":1388791},{"municipio":"Joinville","uf":"SC","populacao":673980}],"regiao":"Sul"}
+{"populacao_regiao":18929341,"mais_populosos":[{"municipio":"Manaus","uf":"AM","populacao":2327101},{"municipio":"Belém","uf":"PA","populacao":1396157},{"municipio":"Porto Velho","uf":"RO","populacao":520379}],"regiao":"Norte"}
+{"populacao_regiao":17401676,"mais_populosos":[{"municipio":"Brasília","uf":"DF","populacao":3009996},{"municipio":"Goiânia","uf":"GO","populacao":1511709},{"municipio":"Campo Grande","uf":"MS","populacao":970843}],"regiao":"Centro-Oeste"}
+

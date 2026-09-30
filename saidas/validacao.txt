@@ -1,0 +1,10 @@
+[OK] alertas.json: 176098 no arquivo, 176098 no Mongo
+[OK] municipios.json: 5571 no arquivo, 5571 no Mongo
+[OK] populacao.json: 5571 no arquivo, 5571 no Mongo
+[OK] São Paulo: soma das semanas 1585687, notif_accum_year 1585687
+[OK] Campinas: soma das semanas 356755, notif_accum_year 356755
+[OK] Belo Horizonte: soma das semanas 849351, notif_accum_year 849351
+[OK] Joinville: soma das semanas 288219, notif_accum_year 288219
+[OK] incidencia por 100 mil: 0 divergencias em 2000 semanas
+[OK] municipios sem populacao correspondente: 0
+[OK] populacao total somada: 214,211,951 habitantes
