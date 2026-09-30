@@ -82,7 +82,7 @@ db.alertas.aggregate([
 
 ![Resultado da Consulta 1](prints/f-dengue-consulta1.png){width=16cm}
 
-O resultado mostra que ranquear por número absoluto engana: o Rio de Janeiro aparece no top 10 com 141 mil casos, mas tem a menor incidência da lista (2.140 por 100 mil), enquanto São José dos Campos tem menos casos e uma incidência dez vezes maior.
+O resultado mostra que ranquear por número absoluto engana: o Rio de Janeiro aparece no top 10 com 141 mil casos, mas tem a menor incidência da lista (2.140 por 100 mil), porque são 6,6 milhões de habitantes. São José dos Campos, com um décimo dessa população, tem incidência dez vezes maior e ficou 40 semanas em alerta vermelho.
 
 ### Consulta 2 — As 10 semanas epidemiológicas mais críticas
 
@@ -154,7 +154,7 @@ print(dengue.alertas.count_documents({}))
 
 ![Casos de dengue por semana epidemiológica](prints/viz1-dengue-sazonalidade.png){width=16cm}
 
-**i1) Objetivo e conclusão:** mostrar a sazonalidade da dengue somando os casos de cada semana epidemiológica ao longo dos dez anos. Dá para concluir que a doença é fortemente concentrada no primeiro semestre: o pico está na semana 15 (abril) com 857 mil casos, e a partir da semana 25 a curva cai para menos de um oitavo disso.
+**i1) Objetivo e conclusão:** mostrar a sazonalidade da dengue somando os casos de cada semana epidemiológica ao longo dos dez anos. Dá para concluir que a doença é fortemente concentrada no primeiro semestre: o pico está na semana 15 (abril) com 857 mil casos, e na semana 30 a curva já caiu para 97 mil, quase um nono do pico.
 
 **i2) Atributos envolvidos:** `SE` (semana epidemiológica no formato AAAASS, de onde sai a semana) e `casos` (notificações da semana).
 
